@@ -1,0 +1,1 @@
+This is a static single page app built with vanilla HTML, CSS, and JavaScript.
