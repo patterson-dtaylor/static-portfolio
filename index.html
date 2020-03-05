@@ -7,6 +7,11 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <script src="https://kit.fontawesome.com/2bedfb61ec.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
     <header>
@@ -33,7 +38,7 @@
         Hi, I am <strong>Taylor Patterson</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-      <img src="img/profile_image.jpg" alt="a profile picture of Taylor Patterson">
+      <img src="img/profile_image.jpg" alt="a profile picture of Taylor Patterson" class="intro__img">
     </section>
 
     <!-- My Skills -->
@@ -41,21 +46,21 @@
       <h2 class="section__title section__title--skills">What I Do</h2>
       <div class="skills"> <!-- star of skills -->
         <div class="skill">
-          <h3>Frontend Development</h3>
+          <h3>Front-end Development</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste nemo maxime 
             blanditiis voluptatem provident saepe ratione. Quasi pariatur veniam officiis at 
             iure praesentium nihil sed harum dicta, reiciendis eligendi.</p>
         </div> <!-- / skill 1-->
 
         <div class="skill">
-          <h3>Backend Development</h3>
+          <h3>Back-end Development</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste nemo maxime 
             blanditiis voluptatem provident saepe ratione. Quasi pariatur veniam officiis at 
             iure praesentium nihil sed harum dicta, reiciendis eligendi.</p>
         </div> <!-- / skill 2-->
 
         <div class="skill">
-          <h3>Version Control + Collaboration</h3>
+          <h3>Design + Development</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste nemo maxime 
             blanditiis voluptatem provident saepe ratione. Quasi pariatur veniam officiis at 
             iure praesentium nihil sed harum dicta, reiciendis eligendi.</p>
@@ -68,67 +73,81 @@
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">Front-end Dev based out of GA</p>
 
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste nemo maxime 
+          blanditiis voluptatem provident saepe ratione. Quasi pariatur veniam officiis at 
+          iure praesentium nihil sed harum dicta, reiciendis eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste nemo maxime 
+          blanditiis voluptatem provident saepe ratione. Quasi pariatur veniam officiis at 
+          iure praesentium nihil sed harum dicta, reiciendis eligendi.</p>
       </div>
 
-      <img src="img/profile_image.jpg" alt="profile image of Taylor Patterson">
+      <img src="img/about-me-profile.jpg" alt="profile image of Taylor Patterson" class="about-me__img">
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio__img">
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
         </a>
 
         <!-- Portfolio item 02 -->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio__img">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
         </a>
 
         <!-- Portfolio item 03 -->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio__img">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
         </a>
 
         <!-- Portfolio item 04 -->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio__img">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
         </a>
 
         <!-- Portfolio item 05 -->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio__img">
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
         </a>
 
         <!-- Portfolio item 06 -->
         <a href="#" class="portfolio__item">
-          <img src="#" alt="" class="portfolio__img">
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
         </a>
 
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a href="mailto:patterson.dtaylor@gmail.com" class="footer__link">patterson.dtaylor@gmail.com</a>
       <ul class="social-list">
-        <li class="social-list__item"><a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
-          class="social-list__link">A</a></li>
-        <li class="social-list__item"><a href="https://github.com/patterson-dtaylor" 
-          class="social-list__link">B</a></li>
-        <li class="social-list__item"><a href="https://twitter.com/hey_patterson" 
-          class="social-list__link">C</a></li>
-        <li class="social-list__item"><a href="https://codepen.io/patterson-dtaylor" 
-          class="social-list__link">D</a></li>
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
+          class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/patterson-dtaylor" 
+          class="social-list__link">
+           <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com/hey_patterson" 
+          class="social-list__link">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
       </ul>
     </footer>
   </body>
