@@ -237,6 +237,15 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 5px;
+  background-color: var(--clr-light);
+  z-index: 1000;
+}
+
 /* Intro Section */
 
 .intro {
