@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This is a static single page app built with vanilla HTML, CSS, and JavaScript.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "eslint": "^6.8.0"
   },
