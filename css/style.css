@@ -86,6 +86,11 @@ strong { font-weight: var(--fw-bold);}
   transform: scale(1.1);
 }
 
+.portfolio-item__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Typography */
 
 h1,
@@ -394,29 +399,79 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.portfolio__item {
-    background: var(--clr-accent);
+.portfolio__item--container {
     overflow: hidden;
+    position: relative;
+    background-color: var(--clr-light);
 }
 
 .portfolio__img {
     width: 480px;
     height: 480px;
     object-fit: cover;
-    transition: 
-       transform 750ms cubic-bezier(.5, 0, .5, 1)
-       opacity 250ms linear;
 }
 
-.portfolio__item:focus {
+.portfolio__item--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: var(--clr-light);
+  background-color: rgba(255, 174, 0, 0.9);
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.portfolio__item--overlay:hover {
+  opacity: 1;
+}
+
+.portfolio__item--content {
+  height: 100%;
+  width: 100%;
+  color: var(--clr-dark);
+}
+
+.portfolio__item--title,
+.portfolio__item--tag {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+}
+
+.portfolio__item--title {
+  font-weight: var(--fw-bold);
+  /* margin: 5px auto; */
+}
+
+.portfolio__logo {
+  color: var(--clr-black);
+  font-size: var(--fs-h2);
+}
+
+.portfolio__logo:hover,
+.portfolio__item--tag a:hover {
+  opacity: 0.85;
+}
+
+.portfolio__item--tag {
+  font-weight: var(--fw-reg);
+  margin: 15px 0;
+}
+
+.portfolio__item--tag a {
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+
+.portfolio__item--tag a:hover{
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+}
+
+.portfolio__item--container:focus {
   position: relative;
   z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-  transform: scale(1.1);
-  opacity: .5;
 }
 
 /* Footer */
@@ -462,24 +517,4 @@ header {
 
 .social-list__link {
   padding: .5em;
-}
-
-/* Individual portfolio item styles */
-
-.portfolio-item-individual {
-  padding: 0 2em 2em;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portfolio-item-individual img {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
