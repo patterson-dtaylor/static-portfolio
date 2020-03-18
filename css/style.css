@@ -508,7 +508,7 @@ header {
   display: flex;
   justify-content: center;
   margin: 2em 0 0;
-  padding: 0;
+  padding: 0 0 25px 0;
 }
 
 .social-list__item {
@@ -517,4 +517,8 @@ header {
 
 .social-list__link {
   padding: .5em;
+}
+
+.footer p {
+  font-size: .90rem;
 }
