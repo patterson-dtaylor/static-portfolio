@@ -260,6 +260,7 @@ header {
 .intro__img,
 .portfolio-item__img {
     box-shadow: var(--bs);
+    background-color: var(--clr-light);
 }
 
 @media (min-width: 600px) {
@@ -397,6 +398,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 30px;
 }
 
 .portfolio__item--container {
@@ -532,9 +534,15 @@ header {
 }
 
 .portfolio-item-individual p {
-  max-width: 600px;
+  font-size: var(--fs-h3);
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.portfolio-item-individual a {
+  color: var(--clr-accent);
+  text-decoration: none;
 }
 
 .portfolio-item-individual img {

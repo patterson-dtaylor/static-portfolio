@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Brain</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/2bedfb61ec.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <header id="nav-bar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class='hamburger'></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="/index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="/index.html#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Smart-Brain<strong>React App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">A Fun App For My Contacts</p>
+      <img src="/img/flame-success.png" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>This is my final project of my Web-Developer course.  This Smart-Brain app was
+        built with with React to provide the user an awesome UI experience.  The back-end
+        was built with Node while the database was built with PostgreSQL.  The scope of 
+        this project was to implement 
+        <a href="https://www.clarifai.com/models/face-detection-image-recognition-model-a403429f2ddf4b49b307e318f00e528b-detection" target="_blank">
+          Clarifai API
+        </a> and build an app around the API.
+        My Smart-Brain app can take the url of an image (with a human face) and recognize 
+        the face of the person through automation. 
+      </p>
+      <img src="/img/react-node.png" alt="">
+      <p>This project was challenging and provided me an avenue to stretch my understanding
+        of component management, JSX and JavaScript functionality, and my overall
+        comprehension of React.  In addition, building the back-end was incredibly satisfying
+        to see it come alive and register users on Heroku.  
+      </p>
+      <p>Somethings I would like to do in the future with this application would be to build a 
+        profile system share photos of their face-recognition.  I would also like to update the API
+        to incorporate the ability to recognize two faces rather than one.  
+      </p>
+    </div>
+    
+    <ul class="portfolio-item__list">
+      <li class="portfolio-item__link--item">
+        <a href="https://github.com/patterson-dtaylor/face-recognition-app" class="btn portfolio-item__list--link" target="blank">Repo</a>
+      </li>
+      <li class="portfolio-item__list--item">
+        <a href="https://sm-art-brain.herokuapp.com/" class="btn portfolio-item__list--link" target="blank">Demo</a>
+      </li>
+    </ul>
+      
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:patterson.dtaylor@gmail.com" class="footer__link">patterson.dtaylor@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
+          class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/patterson-dtaylor" 
+          class="social-list__link">
+           <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+  </body>
+</html>
