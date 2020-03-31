@@ -466,14 +466,9 @@ header {
   text-decoration: none;
 }
 
-.portfolio__item--tag a:hover{
+.portfolio__item--tag a:hover {
   font-weight: var(--fw-bold);
   text-decoration: underline;
-}
-
-.portfolio__item--container:focus {
-  position: relative;
-  z-index: 2;
 }
 
 /* Footer */
