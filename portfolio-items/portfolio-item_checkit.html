@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>CheckIt</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/2bedfb61ec.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <header id="nav-bar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class='hamburger'></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="/index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="/index.html#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="/resources/resume.pdf" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        CheckIt<strong>A Check-List App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"></p>
+      <img src="/img/checkit-portfolio-intro.png" alt="CheckIt Profile Picture" class="portfolio-item__img">
+    </section>
+
+    <section class="portfolio-item">
+      <h2 class="section__title--skills">CheckIt</h2>
+      <div class="portfolio-item-individual">
+        <p id="portfolio-item-description">
+          CheckIt is a todo iOS application where the user can create lists, items within those lists, 
+          check-off those items, and/or delete each list or item.  After creating the list, the list(s)
+          is then rendered in a random color. Each item a certain list is then rendered in darker variations
+          of the color of the list. 
+        </p>
+        <img src="/img/checkit-profile-mockup.png" alt="CheckIt Mockup Picture">
+        <h3 class="portfolio-item__section-heading">Tools Used</h3>
+        <ul class="portfolio-item__tools-list">
+          <li class="tools-list__item">
+            <a href="https://cocoapods.org/pods/ChameleonFramework" target="blank">
+              <img src="https://camo.githubusercontent.com/bde5aa6ee0e1feec044d184a735da8024c60c04c/687474703a2f2f692e696d6775722e636f6d2f427771486842342e706e67" alt="ChameleonFramework Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>ChameleonFramework</strong>A lightweight color Cocapod for iOS development.</h3>
+            <p class="tools-list__item-description">I used ChameleonFramework's ability to take TableView cells and render them in various colors. 
+              I then used ChameleonFramework's amazing ability to take a cell's color and render the cell's 
+              color variants to it's darkest color depending on the length of the list associated with the cell.
+            </p>
+          </li>
+          <li class="tools-list__item">
+            <a href="https://realm.io/" target="blank">
+              <img src="https://realm.io/assets/img/social/realmDark.jpg" alt="Realm Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>Realm</strong>A super fast mobile database alternative to CoreData.</h3>
+            <p>I used Realm to create a database to save the user's lists and list items. With Realm, users can 
+              create new lists and list items as well as deleting lists and its items. Although this database could 
+              have been created with CoreData, I learned how to use Realm to further my understanding of mobile databases.
+            </p>
+          </li>
+          <li class="tools-list__item">
+            <a href="https://cocoapods.org/pods/SwipeCellKit" target="blank">
+              <img src="https://raw.githubusercontent.com/jerkoch/SwipeCellKit/develop/Screenshots/Transition-Drag.gif" alt="SwipeCellKit Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title">
+              <strong>SwipeCellKit</strong>An easy to use Cocoapod to implement the swiping action used in the Mail app.
+            </h3>
+            <p>One of the advantages of standing on the shoulders of giants is taking advantage of their amazing work and 
+              using their work to make your app better. Such is the case with my use of SwipeCellKit. Within CheckIt, I 
+              used the action provided by SwipeCellKit to give the user a familiar action used by Apple's Mail app. This 
+              UI component allows for a shorter learning curve due to familiarity of SwipeCellKit's actions.
+            </p>
+          </li>
+        </ul>
+        
+        <h3 class="portfolio-item__section-heading">Challenges and Further Improvements</h3>
+        <p>
+          This project presented some challenges with UITableViews and implementing Realm. However, documentation and 
+          research gave me the answers I needed to succeed with this project.  As always, I think our projects are 
+          never perfect and always evolving. Some features I would like to develop to enhance the users experience 
+          would be a color customization feature when user adds a new list. Also, I would like to add a cloud database 
+          for users to log in, so when they change devices they could take their lists with them.
+        </p>
+      </div>
+
+      <ul class="portfolio-item__list">
+        <li class="portfolio-item__link--item">
+          <a href="https://github.com/patterson-dtaylor/CheckIt" class="btn portfolio-item__btn" target="blank">Repo</a>
+        </li>
+      </ul>
+
+    </section>
+    
+    
+    
+      
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:patterson.dtaylor@gmail.com" class="footer__link">patterson.dtaylor@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
+          class="social-list__link" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/patterson-dtaylor" 
+          class="social-list__link" target="blank">
+           <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+  </body>
+</html>

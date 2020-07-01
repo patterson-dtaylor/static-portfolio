@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>TwitterClone</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/2bedfb61ec.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <header id="nav-bar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class='hamburger'></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="/index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="/index.html#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="/resources/resume.pdf" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        TwitterClone<strong>A Social Media App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"></p>
+      <img src="/img/twitterclone-portfolio-icon.png" alt="Twittermenti Profile Picture" class="portfolio-item__img">
+    </section>
+
+    <section class="portfolio-item">
+      <h2 class="section__title--skills">TwitterClone</h2>
+      <div class="portfolio-item-individual">
+        <p id="portfolio-item-description">
+          What better way to test out your skills as a developer than to try and tackle one of the most iconic social
+          media apps. As the app name states, TwitterClone is a replica of Twitter. I wanted to replicate Twitter to 
+          practice MVVM structural design, dive further with OOP, programmatically build every UIView, practice building
+           a cloud database through Firebase, as well as direct messaging functionality through Firebase as well. 
+        </p>
+
+        <img src="/img/twitterclone-portfolio-mockup.png" alt="CheckIt Mockup Picture">
+
+        <h3 class="portfolio-item__section-heading">Tools Used</h3>
+
+        <ul class="portfolio-item__tools-list">
+
+          <li class="tools-list__item">
+            <a href="https://firebase.google.com/" target="blank">
+              <img src="https://firebase.google.com/images/brand-guidelines/logo-built_black.png" alt="Firebase Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>Firebase</strong>Google's answer to storing mobile data.</h3>
+            <p class="tools-list__item-description">
+              What can't be said already about Firebase that hasn't been stated yet? It's fast, easy to learn, and can be
+              implemented with Apple's sign in functionality.  I used Firebase's Cloud Firestore and Authentication capabilities
+              to register new users, send and receive tweets and direct messages, as well as the link functionality.  I chose
+              Firebase because of its ease of use and how fast the cloud database is.  
+            </p>
+          </li>
+
+          <li class="tools-list__item">
+            <a href="https://www.raywenderlich.com/34-design-patterns-by-tutorials-mvvm" target="blank">
+              <img src="https://devshive.tech/media/uploads/contents/1516823789563-design-patterns-for-cocoa-mvc-and-mvvm.png" alt="Swifter Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>MVVM</strong>A better approach to iOS Design Pattern.</h3>
+            <p>
+              When I first started out learning iOS development, I learned all I could about MVC (the design pattern used by Apple).
+              However, after research, discussions with another (paid) iOS developer, and just the shear realization how massive code
+              code can become in MVC or Massive View Conroller, I started to look for a better design approach to my coding architecture
+              then came MVVM.  I've wanted to use MVVM for a while now, but most of my projects have been small and MVC being fine for 
+              what I was doing. I chose to use MVVM for TwitterClone due to the size of the app and moving parts, and this way I could 
+              neatly keep each functionality separate thus resulting in cleaner and more readable code.  This wasn't an easy task, and 
+              it took me a bit to get use to the design pattern, but I really like the way MVVM has made me think more about how my code
+              looks as well as the functionality of it.  Plus, it really makes you practice your OOP and POP programming fundamentals.
+            </p>
+          </li>
+
+          <li class="tools-list__item">
+            <a href="https://www.sketch.com/" target="blank">
+              <img src="https://www.rookieup.com/wp-content/uploads/2018/01/sketch-logo-light-transparent@2x.png" alt="Sketch Logo" width="600" style="max-width: 100%;" id="sketch">
+            </a>
+            <h3 class="tools-list__title">
+              <strong>Sketch</strong> A digital design toolkit.
+            </h3>
+            <p>
+              What I love about iOS development is you have fill the roll of a full stack developer. In one moment you're networking with APIs
+              and creating backend functionality through CoreData or Firebase all the while keeping in mind to make the app look pretty with 
+              UI/UX elements for the user. For the "pretty" aspect, I wanted to learn a tool that was built for UI/UX design, used in the 
+              industry, and did not have a steep learning curve.  Sketch has fit every need thus far.  Every mockup picture on my portfolio was
+              built with swift as well as many of the buttons, backgrounds, and screens used in my applications. Sketch is an invaluable tool 
+              that has made me look at iOS design with a much different eye. 
+            </p>
+          </li>
+        </ul>
+        
+        <h3 class="portfolio-item__section-heading">Challenges and Further Improvements</h3>
+        <p>
+          This was a super fun project to learn how to build and design.  I wanted a big project with a lot of moving parts, and I think I got 
+          it with TwitterClone.  The major challenges that I faced was keeping with the MVVC design pattern and constantly thinking about how 
+          the architecture of my code needed to be designed so that it was cohesive. I knew what it should look like, come on it's Twitter, but 
+          building something like this was out of my wheel house. Although, with proper research, reading documentation, and trial and error, 
+          TwitterClone has been one of the best projects yet. Some further improvements I would like to make would be the functionality of a side-
+          bar that displays the user's menu options. 
+        </p>
+      </div>
+
+      <ul class="portfolio-item__list">
+        <li class="portfolio-item__link--item">
+          <a href="https://github.com/patterson-dtaylor/twittermenti" class="btn portfolio-item__btn" target="blank">Repo</a>
+        </li>
+      </ul>
+
+    </section>
+    
+    
+    
+      
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:patterson.dtaylor@gmail.com" class="footer__link" target="blank">patterson.dtaylor@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
+          class="social-list__link" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/patterson-dtaylor" 
+          class="social-list__link" target="blank">
+           <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+  </body>
+</html>

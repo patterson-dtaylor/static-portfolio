@@ -41,28 +41,33 @@
       <h1 class="section__title section__title--intro">
         Hi, I am <strong>Taylor Patterson</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <p class="section__subtitle section__subtitle--intro">iOS Developer</p>
       <img src="img/profile_image.jpg" alt="a profile picture of Taylor Patterson" class="intro__img">
     </section>
 
     <!-- My Skills -->
     <section class="my-skills" id="skills">
-      <h2 class="section__title section__title--skills">What I Do</h2>
-      <div class="skills"> <!-- star of skills -->
+      <h2 class="section__title section__title--skills">What I Offer</h2>
+      <div class="skills"> <!-- start of skills -->
         <div class="skill">
-          <h3>Front-end Development</h3>
-          <p>I enjoy developing simple, clean client-side applications with HTML, CSS, API implementation, 
-            Vanilla JavaScript, and React. I have experience with using CSS frameworks such as Tachyons 
-            and Bootstrap to enhance the user's experience with the application's UI.  Although I thoroughly 
-            enjoy Vanilla JS, I also have experience developing with Jquery and JSX libraries.  
+          <h3>iOS Development</h3>
+          <p>I offer the tenacity of a self-taught iOS developer who has been captivated with building clean 
+            beautiful applications. I offer a personal culture that is constantly learning about Swift, Xcode, 
+            and Core Data to better the functionality of my apps with the expectation of enhancing the user's 
+            experience. I offer researching new ways to better the functionality of my apps with third party 
+            Cocoapods and frameworks such as Google's Firebase all the while keeping in mind the user when adding 
+            such functionality.  I also offer writing strong Unit and UI Tets to better the functionality of not 
+            only the application itself but to make sure the user experience is flawless.   
           </p>
         </div> <!-- / skill 1-->
 
         <div class="skill">
-          <h3>Back-end Development</h3>
-          <p>I have experience building server-side applications with Node.js, Express, Flask and Gunicorn. 
-            I also have experience building relational databases with PostgreSQL and used tools such as PostMan 
-            to fully develop back-end servers.
+          <h3>UI/UX Design</h3>
+          <p>Although building applications with Swift and Xcode is fundamentally the core of what an iOS Developer
+            achieves, I also offer experience building UI and UX designs within Sketch. As a self-taught developer, making my 
+            apps look beautiful required me to learn Sketch alongside learning iOS development. I offer a good eye 
+            for iOS design that is modern, clean, and beautiful that never takes away from the functionality of the 
+            application.  
           </p>
         </div> <!-- / skill 2-->
 
@@ -81,23 +86,25 @@
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Front-end Dev based out of GA</p>
+      <p class="section__subtitle section__subtitle--about">iOS Dev based out of GA</p>
+      <img src="img/about-me1.png" alt="profile image of Taylor Patterson" class="about-me__img">
 
       <div class="about-me__body">
         <p>I am the husband to a beautiful, courageous Pisces and the father of two strong young women. 
           As of right now, I am currently working as a public educator in the Deaf and Hard of Hearing field. 
           I have been a special educator for seven years. Although I love teaching, I am looking for a new 
-          adventure in the tech world as a front-end developer. When I'm not banging out code, I enjoy running,
+          adventure in the tech world as a iOS developer. When I'm not banging out code, I enjoy running,
           woodworking, and hiking through America's wilderness.</p>
-        <p>While working as an educator and Special Education Lead Teacher, I have completed Andrei Neagoie's 
-          Zero to Master Python Developer and Web Developer courses, competed in various coding challenges, 
-          and worked on various open source content through Github.</p>
+        <p>While working as an educator and Special Education Lead Teacher, I became obsessed with iOS developement
+          after building my first "I Am Rich" app.  Since then, I have completed Angela Yu's iOS 13 and Swift 5 
+          iOS Bootcamp, competed in various coding challenges, and worked on various open source content through Github.
+        </p>
         <p>Coding has changed my life's direction and revived a deep passion for learning that I though education
-          could only obtain. I love learning and the challenge of building applications with new technologies along 
-          with weird, wild side of JavaScript.  I am open for hire and willing to re-locate for a new adventure!</p>
+          could only obtain. I love learning and the challenge of building applications with new technologies along
+          side the beautiful Swift language.  I am open for hire and willing to re-locate for a new adventure!
+        </p>
       </div>
-
-      <img src="img/about-me-profile.jpg" alt="profile image of Taylor Patterson" class="about-me__img">
+      
     </section>
 
     <!-- My Work -->
@@ -108,19 +115,13 @@
       <div class="portfolio">
         <!-- Portfolio item 01 -->
         <div class="portfolio__item--container">
-          <img src="img/flame-success.png" alt="" class="portfolio__img">
-          <div class="portfolio__item--overlay">
+          <a href="portfolio-items/portfolio-item_twitterclone.html">
+            <img src="img/twitterclone-grid1.png" alt="" class="portfolio__img">
+          </a>
+          <div class="portfolio__item--container-details" id="twitterclone">
             <div class="portfolio__item--content">
-              <p class="portfolio__item--title">Smart-Brain</p>
-              <p class="portfolio__item--tag">Repo</p>
-              <a href="https://github.com/patterson-dtaylor/face-recognition-app" target="_blank" class="portfolio__logo">
-                <i class="fab fa-github-square"></i>
-              </a>
-              <p class="portfolio__item--tag">Demo</p>
-              <a href="https://sm-art-brain.herokuapp.com/" target="_blank" class="portfolio__logo">
-                <i class="fab fa-git-alt"></i>
-              </a>
-              <p class="portfolio__item--tag"><a href="portfolio-items/portfolio-item_smart-brain.html">Learn More</a></p>
+              <p class="portfolio__item--title">TwitterClone</p>
+              <p class="portfolio__item--tag">A Twitter Clone App</p>
             </div>
           </div>
         </div>
@@ -128,97 +129,38 @@
 
         <!-- Portfolio item 02 -->
         <div class="portfolio__item--container">
-          <img src="img/flame-5.png" alt="" class="portfolio__img">
-          <div class="portfolio__item--overlay">
+
+          <div class="portfolio__item--container-work">
+            <a href="portfolio-items/portfolio-item_checkit.html">
+              <img src="img/checkIt-grid3.png" alt="" class="portfolio__img">
+            </a>
+          </div>
+          
+          <div class="portfolio__item--container-details" id="checkit">
             <div class="portfolio__item--content">
-              <p class="portfolio__item--title">Robo-Friends</p>
-              <p class="portfolio__item--tag">Repo</p>
-              <a href="https://github.com/patterson-dtaylor/robofriends" target="_blank" class="portfolio__logo">
-                <i class="fab fa-github-square"></i>
-              </a>
-              <p class="portfolio__item--tag">Demo</p>
-              <a href="https://patterson-dtaylor.github.io/robofriends/" target="_blank" class="portfolio__logo">
-                <i class="fab fa-git-alt"></i>
-              </a>
-              <p class="portfolio__item--tag"><a href="portfolio-items/portfolio-item_robo-friends.html">Learn More</a></p>
+              <p class="portfolio__item--title">CheckIt</p>
+              <p class="portfolio__item--tag">A Check-List Todo App</p>
             </div>
           </div>
+
         </div>
 
         <!-- Portfolio item 03 -->
         <div class="portfolio__item--container">
-          <img src="img/mirage-music-production.png" alt="" class="portfolio__img">
-          <div class="portfolio__item--overlay">
-            <div class="portfolio__item--content">
-              <p class="portfolio__item--title">Drum Machine</p>
-              <p class="portfolio__item--tag">Repo</p>
-              <a href="https://github.com/patterson-dtaylor/drum-machine" target="_blank" class="portfolio__logo">
-                <i class="fab fa-github-square"></i>
-              </a>
-              <p class="portfolio__item--tag">Demo</p>
-              <a href="https://patterson-dtaylor.github.io/drum-machine/" target="_blank" class="portfolio__logo">
-                <i class="fab fa-git-alt"></i>
-              </a>
-              <p class="portfolio__item--tag"><a href="portfolio-items/portfolio-item_drum-machine.html">Learn More</a></p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Portfolio item 04 -->
-        <div class="portfolio__item--container">
-          <img src=img/flamenco-waiting.png alt="" class="portfolio__img">
-          <div class="portfolio__item--overlay">
-            <div class="portfolio__item--content">
-              <p class="portfolio__item--title">JavaScript Clock</p>
-              <p class="portfolio__item--tag">Repo</p>
-              <a href="https://github.com/patterson-dtaylor/js-clock" target="_blank" class="portfolio__logo">
-                <i class="fab fa-github-square"></i>
-              </a>
-              <p class="portfolio__item--tag">Demo</p>
-              <a href="https://patterson-dtaylor.github.io/js-clock/" target="_blank" class="portfolio__logo">
-                <i class="fab fa-git-alt"></i>
-              </a>
-              <p class="portfolio__item--tag"><a href="portfolio-items/portfolio-item_clock.html">Learn More</a></p>
-            </div>
+          <div class="portfolio__item--container-work">
+            <a href="portfolio-items/portfolio-item_twittermenti.html">
+              <img src="img/twittermenti-grid2.png" alt="" class="portfolio__img">
+            </a>
           </div>
-        </div>
 
-        <!-- Portfolio item 05
-        <div class="portfolio__item--container">
-          <img src="img/genius-idea.png" alt="" class="portfolio__img">
-          <div class="portfolio__item--overlay">
+          <div class="portfolio__item--container-details" id="twittermenti">
             <div class="portfolio__item--content">
-              <p class="portfolio__item--title">Population-Counter</p>
-              <p class="portfolio__item--tag">Repo</p>
-              <a href="#work" target="_blank" class="portfolio__logo">
-                <i class="fab fa-github-square"></i>
-              </a>
-              <p class="portfolio__item--tag">Demo</p>
-              <a href="#work" target="_blank" class="portfolio__logo">
-                <i class="fab fa-git-alt"></i>
-              </a>
-              <p class="portfolio__item--tag"><a href="portfolio-items/portfolio-item_population-counter.html">Learn More</a></p>
+              <p class="portfolio__item--title">Twittermenti</p>
+              <p class="portfolio__item--tag">A Machine Learning App</p>
             </div>
           </div>
-        </div> -->
 
-        <!-- Portfolio item 06 -->
-        <div class="portfolio__item--container">
-          <img src="/img/flame-uploading.png" alt="" class="portfolio__img">
-          <div class="portfolio__item--overlay">
-            <div class="portfolio__item--content">
-              <p class="portfolio__item--title">Omni-Food Website</p>
-              <p class="portfolio__item--tag">Repo</p>
-              <a href="https://github.com/patterson-dtaylor/Omnifood-Project" target="_blank" class="portfolio__logo">
-                <i class="fab fa-github-square"></i>
-              </a>
-              <p class="portfolio__item--tag">Demo</p>
-              <a href="https://patterson-dtaylor.github.io/Omnifood-Project/" target="_blank" class="portfolio__logo">
-                <i class="fab fa-git-alt"></i>
-              </a>
-              <p class="portfolio__item--tag"><a href="portfolio-items/portfolio-item_omnifood.html">Learn More</a></p>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -231,13 +173,13 @@
       <ul class="social-list">
         <li class="social-list__item">
           <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
-          class="social-list__link">
+          class="social-list__link" target="blank">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li class="social-list__item">
           <a href="https://github.com/patterson-dtaylor" 
-          class="social-list__link">
+          class="social-list__link" target="blank">
            <i class="fab fa-github-square"></i>
           </a>
         </li>

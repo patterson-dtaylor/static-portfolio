@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Twittermenti</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/2bedfb61ec.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <header id="nav-bar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class='hamburger'></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="/index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="/index.html#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="/resources/resume.pdf" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Twittermenti<strong>A Machine Learning App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"></p>
+      <img src="/img/twittermenti-portfolio-intro.png" alt="Twittermenti Profile Picture" class="portfolio-item__img">
+    </section>
+
+    <section class="portfolio-item">
+      <h2 class="section__title--skills">Twittermenti</h2>
+      <div class="portfolio-item-individual">
+        <p id="portfolio-item-description">
+          Twittermenti is a super fun app that searches for negative, positive, or neutral sentiments of Twitter handles 
+          and Twitter hashtags. Twittermenti then takes the search query and turns the findings, using the machine 
+          learning model, into emojis that emote the nature of the search. 
+        </p>
+        <img src="/img/twittermenti-profile-mockup.png" alt="CheckIt Mockup Picture">
+        <h3 class="portfolio-item__section-heading">Tools Used</h3>
+        <ul class="portfolio-item__tools-list">
+          <li class="tools-list__item">
+            <a href="https://developer.twitter.com/en/docs" target="blank">
+              <img src="https://lh3.googleusercontent.com/proxy/IDL97XOJspiS1NhMLdbOKOaMXOILQqQ6iO0GdlCFEsvEYuRYPnHNXRBGBO8zVYgMnuD9yeXzM5OUMB7dNo-4NhQqnFQGbT2v1qOYN8sfNF8NmkN4H87vZr6aZb8TgRct0IFNAazTF0E" alt="Twitter Developer Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>Twitter Developer API</strong>Twitter's powerful API.</h3>
+            <p class="tools-list__item-description">
+              Twittermenti uses Twitter's API to query a list of most recent 100 tweets when searching a hashtag or username.
+            </p>
+          </li>
+          <li class="tools-list__item">
+            <a href="https://github.com/mattdonnelly/Swifter" target="blank">
+              <img src="/img/swifter-logo.png" alt="Swifter Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>Swifter</strong>A Twitter Framework written in Swift.</h3>
+            <p>
+              Swifter is an embedded framework that works with the Twitter API all written in Swift.  I used Swifter to access
+              Twitter's API, run a query of the first 100 tweets based on the user's search field, and render data in the form 
+              of a JSON file. Swifter was super easy to use with the their amazing documentation.
+            </p>
+          </li>
+          <li class="tools-list__item">
+            <a href="https://cocoapods.org/pods/SwiftyJSON" target="blank">
+              <img src="https://i2.wp.com/ashishkakkad.com/wp-content/uploads/2014/10/swift_json_logo.jpg?resize=398%2C137&ssl=1" alt="SwiftyJSON Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title">
+              <strong>SwiftyJSON</strong>A cocoapod that makes it easier to handel JSON data in swift.
+            </h3>
+            <p>I used SwiftyJSON to render JSON data from Twitter's API and render said data to the controller. 
+              Although Swift can manage JSON data well with its JSON decoder Object, I wanted to branch out and 
+              learn another way to decode JSON data using a cocoapod.
+            </p>
+          </li>
+          <li class="tools-list__item">
+            <a href="https://www.kaggle.com/kazanova/sentiment140" target="blank">
+              <img src="https://camo.githubusercontent.com/55df6f12df2406b2888af10ed64133b6f0330573/68747470733a2f2f7777772e6b6167676c652e636f6d2f7374617469632f696d616765732f736974652d6c6f676f2e706e67" alt="Kaggle Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title">
+              <strong>Kaggle Sentiment140 Dataset</strong>A dataset based on Sanders' tweet sentiment dataset.
+            </h3>
+            <p>I used the dataset as a part of the machine learning aspect of Twittermenti's ability to judge the 
+              sentiment of the first 100 tweets (+1 for positive, -1 for negative, and 0 for neutral). After 
+              calculating the judgement number, Twittermenti runs a simple switch/case block to render an emoji 
+              representing the current mood of the query.
+            </p>
+          </li>
+        </ul>
+        
+        <h3 class="portfolio-item__section-heading">Challenges and Further Improvements</h3>
+        <p>
+          Any project that requires new technology to learn comes with it challenges. This is why reading documentation
+          is so important.  Most of my challenges came from getting each technology to "talk" each other while maintaining 
+          MVC design structure and strong, clean object oriented programming. Some features I would like to develop to 
+          enhance the users experience would be a small UITableView to show a list of the user's recent queries and emojis 
+          associated with the query.
+        </p>
+      </div>
+
+      <ul class="portfolio-item__list">
+        <li class="portfolio-item__link--item">
+          <a href="https://github.com/patterson-dtaylor/twittermenti" class="btn portfolio-item__btn" target="blank">Repo</a>
+        </li>
+      </ul>
+
+    </section>
+    
+    
+    
+      
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:patterson.dtaylor@gmail.com" class="footer__link" target="blank">patterson.dtaylor@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
+          class="social-list__link" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/patterson-dtaylor" 
+          class="social-list__link" target="blank">
+           <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+  </body>
+</html>
