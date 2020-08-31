@@ -475,17 +475,6 @@ header {
   margin-top: -15px;
 }
 
-/*
-.portfolio__item--tag a {
-  color: var(--clr-dark);
-  text-decoration: none;
-}
-
-.portfolio__item--tag a:hover {
-  font-weight: var(--fw-bold);
-  text-decoration: underline;
-} */
-
 #twitterclone { background-color: rgb(90, 200, 250);}
 
 #top10news { background-color: rgb(249, 43, 141); }
