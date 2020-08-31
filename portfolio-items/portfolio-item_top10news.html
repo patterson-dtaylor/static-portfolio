@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Top10News</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/2bedfb61ec.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <header id="nav-bar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class='hamburger'></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="/index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="/index.html#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="/resources/Taylor_Patterson_Resume.pdf" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Top10 News<strong>A News App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"></p>
+      <img src="/img/Top10News-Dark.png" alt="Top10News Profile Picture" class="portfolio-item__img">
+    </section>
+
+    <section class="portfolio-item">
+      <h2 class="section__title--skills">Top10 News</h2>
+      <div class="portfolio-item-individual">
+        <p id="portfolio-item-description">
+          This project was built for the user in mind.  Instead of being bombarded with numerous articles, I wanted an 
+          app that only curated a list of the top 10 articles for a query. Top10 News adheres to MVVM structural design, 
+          uses OOP best practices to pass data through the view hierarchy, programmatically built every UIView, user login
+          uses Authentication through Firebase as well as personal bookmarks saved within constructed database through Firebase. 
+        </p>
+
+        <img src="/img/top10news-mockup.png" alt="Top10News Mockup Picture">
+
+        <h3 class="portfolio-item__section-heading">Tools Used</h3>
+
+        <ul class="portfolio-item__tools-list">
+
+          <li class="tools-list__item">
+            <a href="https://firebase.google.com/" target="blank">
+              <img src="https://firebase.google.com/images/brand-guidelines/logo-built_black.png" alt="Firebase Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>Firebase</strong>Google's answer to storing mobile data.</h3>
+            <p class="tools-list__item-description">
+              Firebase is my go to third party framework for authentication and database functionality. It's fast, easy to learn, and can be
+              implemented with Apple's sign in functionality.  I used Firebase's Cloud database and Authentication capabilities
+              to register new users, save and share user's bookmarks, as well as the link functionality.  I chose Firebase because 
+              of its ease of use and how fast the cloud database is.  
+            </p>
+          </li>
+
+          <li class="tools-list__item">
+            <a href="https://newsapi.org/" target="blank">
+              <img src="https://s3.amazonaws.com/appforest_uf/f1479799611909x580051703844219400/news_api_logo.PNG" alt="NewsAPI Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>NewsAPI</strong>An API that brings accurate news to readers.</h3>
+            <p>
+              Although there are many different news APIs out there, NewsAPI is easy to use, accurate, and easily customizable. I use NewsAPI's
+              data to provide data from the custom collection view cards on the home view, the Top10 News of the latest 10 articles circulating 
+              the US, and user queries on the search view.  
+            </p>
+          </li>
+
+          <li class="tools-list__item">
+            <a href="https://www.raywenderlich.com/34-design-patterns-by-tutorials-mvvm" target="blank">
+              <img src="https://devshive.tech/media/uploads/contents/1516823789563-design-patterns-for-cocoa-mvc-and-mvvm.png" alt="MVVM Logo" width="600" style="max-width: 100%;">
+            </a>
+            <h3 class="tools-list__title"><strong>MVVM</strong>A better approach to iOS Design Pattern.</h3>
+            <p>
+              I chose to use MVVM for Top10 News due to the size of the app and moving parts, and this way I could 
+              neatly keep each functionality separate thus resulting in cleaner and more readable code.  This wasn't an easy task, and 
+              it took me a bit to get use to the design pattern, but I really like the way MVVM has made me think more about how my code
+              looks as well as the functionality of it.  Plus, it really makes you practice your OOP and POP programming fundamentals.
+            </p>
+          </li>
+
+          <li class="tools-list__item">
+            <a href="https://github.com/SDWebImage/SDWebImage" target="blank">
+              <img src="https://raw.githubusercontent.com/SDWebImage/SDWebImage/master/SDWebImage_logo.png" alt="SDWebImage Logo" width="600" style="max-width: 100%;" id="sketch">
+            </a>
+            <h3 class="tools-list__title">
+              <strong>SD WebImage</strong> A Cocoapod for better image implementation.
+            </h3>
+            <p>
+              SD WebImage is a powerful little Cocoapod library that provides an async image downloader.  I used this Cocoapod to take on
+              the task of setting the user's profile image from Firebase.  Because SD WebImage works in the background, it is perfect to
+              gather data from Firebase before the view appears for the user. 
+            </p>
+          </li>
+        
+        <h3 class="portfolio-item__section-heading">Challenges and Further Improvements</h3>
+        <p>
+          This was a super fun project to learn how to build and design.  I wanted a medium sized project with moving parts to hone my OOP skills,
+          The major challenges that I faced was keeping with the MVVC design pattern and constantly thinking about how the architecture of my code
+           needed to be designed so that it was cohesive. Some further improvements I would like to make would be a social media functionality to
+           Top10 News to share bookmarks with other users as well as a top queries or most read articles. 
+        </p>
+      </div>
+
+      <ul class="portfolio-item__list">
+        <li class="portfolio-item__link--item">
+          <a href="https://github.com/patterson-dtaylor/Top10News" class="btn portfolio-item__btn" target="blank">Repo</a>
+        </li>
+      </ul>
+
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:patterson.dtaylor@gmail.com" class="footer__link" target="blank">patterson.dtaylor@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/taylor-patteson-b44208198/" 
+          class="social-list__link" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/patterson-dtaylor" 
+          class="social-list__link" target="blank">
+           <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+  </body>
+</html>

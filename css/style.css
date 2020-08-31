@@ -488,9 +488,11 @@ header {
 
 #twitterclone { background-color: rgb(90, 200, 250);}
 
-#twittermenti { background-color: rgb(76, 217, 100); }
+#top10news { background-color: rgb(249, 43, 141); }
 
-#checkit { background-color: rgb(255, 204, 0); }
+#grid--content { color: var(--clr-light)}
+
+#checkit { background-color: rgb(0, 212, 189); }
 
 @media (max-width: 1000px) {
 
